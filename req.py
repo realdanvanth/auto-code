@@ -46,7 +46,7 @@ def query_deepseek(api_key, api_url, user_input):
         'Content-Type': 'application/json'
     }
     data = {
-        "model": "deepseek/deepseek-chat:free",
+        "model": "deepseek/deepseek-chat:free",#change according to your preference
         "messages": [{"role": "user", "content": user_input}]
     }
     response = requests.post(api_url, json=data, headers=headers)
